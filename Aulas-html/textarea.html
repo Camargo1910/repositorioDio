@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=fo, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <label>Nome: </label><input type="text" name="name" id=""><br>
+            <label>Cargo: </label>
+            <select name="role">
+                <option value="">Selecione o Cargo</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Tecnologia">Tecnologia</option>
+                <option value="Demais Cargos">Demais Cargos</option>
+            </select><br>
+            <label>Assunto: </label><input type="text" name="subject" id=""><br>
+            <label>Mensagem</label>
+            <!-- para ajustar o tamanho do textarea, é usado os atributos rows para definir altura e cols para largura -->
+            <textarea name="Mensagem" rows="10" cols="20"></textarea><br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
