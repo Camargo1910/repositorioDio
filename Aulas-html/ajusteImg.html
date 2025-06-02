@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 5px solid red;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #fill{
+            Object-fit: fill
+        }
+        #contain{
+            Object-fit: contain
+        }
+        #cover{
+            Object-fit: cover
+        }
+        #none{
+            Object-fit: none
+        }
+        #scale-down{
+            Object-fit: scale-down
+        }
+
+        #position{
+            Object-fit: cover;
+            object-position: -100   px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code> Object-fit</code></h1>
+    <!-- comprime a imagem dentro do conatiner -->
+    <code>Object-fit: fill</code>
+    <div>
+        <img src="/cobra.jpg" alt="" id="fill">
+    </div>
+
+    <!-- reduz a imagem para caber 100% dentro do container -->
+    <code>Object-fit: contain</code>
+    <div>
+        <img src="/cobra.jpg" alt="" id="contain">
+    </div>
+
+    <!-- estica a imagem para cobrir 100% da area do container -->
+    <code>Object-fit: cover</code>
+    <div>
+        <img src="/cobra.jpg" alt="" id="cover">
+    </div>
+
+    <!-- mantem imagem tamanho padrao, mesmo que nao caiba no container -->
+    <code>Object-fit: none</code>
+    <div>
+        <img src="/cobra.jpg" alt="" id="none">
+    </div>
+
+    <!-- utiliza o menor tamanho possivel sem perder a qualidade -->
+    <code>Object-fit: scale-down</code>
+    <div>
+        <img src="/cobra.jpg" alt="" id="scale-down">
+    </div>
+
+    <!-- posiciona o item dentro do container, ajustando nos eixos x e y -->
+    <code>Object-position</code>
+    <div>
+        <img src="/cobra.jpg" alt="" id="position">
+    </div>
+</body>
+</html>
